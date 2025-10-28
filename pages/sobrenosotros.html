@@ -1,102 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre nosotras</title>
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre nosotros</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons (para redes del footer) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Tu CSS global -->
+  <link rel="stylesheet" href="../css/estilos.css" />
+
+
 </head>
+
 <body>
 
-  <header class="header">
-    <div class="logoslogan">
-      <img src="../img/espiritual.png" alt="Logo" />
-      <h2 class="slogan-unico">Centro de terapias alternativas</h2>
+  <!-- Navbar responsive -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+ 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase fw-bold">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="preguntasfrecuentes.html">Preguntas frecuentes</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="sobrenosotros.html">Sobre nosotros</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido -->
+  <main>
+    <section class="container my-5">
+      <h2 class="text-success mb-4 fw-bold fst-italic border-bottom border-success pb-2">
+        Conocé más acerca de nuestro espacio
+      </h2>
+
+      <!-- Accordion -->
+      <div class="accordion" id="accordionPreguntas">
+        <!-- Pregunta 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+              ¿Quiénes somos?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show"
+               aria-labelledby="headingOne" data-bs-parent="#accordionPreguntas">
+            <div class="accordion-body">
+              Somos un equipo apasionado por las terapias holísticas y el acompañamiento personal.
+              Buscamos ofrecerte un espacio cálido, seguro y respetuoso en el que puedas sanar y relajarte.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+              ¿Cuáles son los pilares de las terapias holísticas?
+            </button>
+          </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse"
+             aria-labelledby="headingTwo" data-bs-parent="#accordionPreguntas">
+            <div class="accordion-body">
+              <ul class="mb-0">
+                <li>Unidad de cuerpo, mente y espíritu</li>
+                <li>Autoconocimiento y autocuidado</li>
+                <li>Energía vital</li>
+                <li>Prevención y equilibrio</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+              ¿Cuál es nuestra misión?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse"
+               aria-labelledby="headingThree" data-bs-parent="#accordionPreguntas">
+            <div class="accordion-body">
+              Ser un centro de referencia en terapias holísticas, promoviendo una vida más consciente,
+              armónica y conectada con la energía universal.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                    aria-expanded="false" aria-controls="collapseFour">
+              ¿Cuáles son nuestras certificaciones?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse"
+               aria-labelledby="headingFour" data-bs-parent="#accordionPreguntas">
+            <div class="accordion-body">
+              Contamos con certificaciones y formación en Reiki, técnicas de meditación y tarot terapéutico.
+              Esto nos permite ofrecerte un acompañamiento profesional, confiable y respetuoso de tu proceso personal.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </section>
+    
+  <section class="sobrenosotrostítulos">
+    <h3>Nuestro Staff</h3>
+    <p>Empresa con más de 10 años de antiguedad. Con basta experiencia en el mundo de las terapias alternativas, continuamos creciendo en nuestro país. Contamos con la mejor calidad en recursos humanos.</p>
+<div class="row justify-content-center g-4">
+    <!-- Imagen 1 -->
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="card shadow-sm border-0">
+        <div class="ratio ratio-1x1">
+          <img src="../img/julia.jpg"card-img-top rounded alt="Julia">
+        </div>
+        <div class="card-footer bg-white text-center py-3">
+          <span class="staff-name">Julia</span>
+        </div>
+      </div>
     </div>
 
-    <nav class="menu">
-      <ul class="navegador">
-        <li><a href="../index.html">inicio</a></li>
-        <li><a href="./productos.html">productos</a></li>
-        <li><a href="./contacto.html">contacto</a></li>
-        <li><a href="./preguntasfrecuentes.html">preguntas frecuentes</a></li>
-        <li><a href="./sobrenosotros.html" aria-current="page">sobre nosotros</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Imagen 2 -->
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="card shadow-sm border-0">
+        <div class="ratio ratio-1x1">
+          <img src="../img/thiago.jpg" class="card-img-top rounded" alt="Laura">
+        </div>
+        <div class="card-footer bg-white text-center py-3">
+          <span class="staff-name">Laura</span>
+        </div>
+      </div>
+    </div>
 
-  <main class="contenido-principal">
-    <h1 class="titulo">Conoce mas acerca de nuestro espacio</h1>
+    <!-- Imagen 3 -->
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="card shadow-sm border-0">
+        <div class="ratio ratio-1x1">
+          <img src="../img/sofia.jpg" class="card-img-top rounded" alt="Sofía">
+        </div>
+        <div class="card-footer bg-white text-center py-3">
+          <span class="staff-name">Sofía</span>
+        </div>
+      </div>
+    </div>
 
-    <section>
-      <h2>¿Quienes somos?</h2>
-      <p>Somos un equipo apasionado por las terapias holisticas y el acompñamiento personal. Buscamos ofrecerte un espacio seguro, calido y respetuoso, en el que puedas sanar y relajarte.</p>
-      <img src="../img/quienessomos.png" alt="Quiénes somos" />
-    </section>
+    <!-- Imagen 4 -->
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="card shadow-sm border-0">
+        <div class="ratio ratio-1x1">
+          <img src="../img/lorenzo.jpg" class="card-img-top rounded" alt="Emma">
+        </div>
+        <div class="card-footer bg-white text-center py-3">
+          <span class="staff-name">Lorenzo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+<!-- Sección de Testimonios -->
+<section class="testimonios my-5 py-5" style="background: linear-gradient(135deg, #eaf9f0 0%, #f8fdfb 100%);">
+  <div class="container text-center">
+    <h2 class="mb-4" style="color: rgb(54, 110, 74); font-weight: 600;">
+      ✨ Experiencias que inspiran ✨
+    </h2>
+    <p class="mb-5 text-muted" style="max-width: 700px; margin: 0 auto;">
+      Cada encuentro deja una huella. Estas son algunas palabras de quienes encontraron equilibrio y bienestar a través de nuestras sesiones.
+    </p>
 
-    <section>
-      <h2>¿Cual es nuestro proposito?</h2>
-      <p>Nuestro proposito es ayudarte a armonizar cuerpo, emnte y espiritu a traves de distintas practicas energeticas y terapeuticas. Creemos en la importancia del poder de la conexion interior para alcanzar el equilibrio.</p>
-      <img src="../img/nuestroproposito.png" alt="Nuestro propósito" />
-    </section>
+    <div class="row g-4 justify-content-center">
+      <!-- Testimonio 1 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-lg p-4 h-100" style="border-radius: 20px;">
+          <div class="card-body">
+            <p class="card-text fst-italic">
+              “Después de mi primera sesión de Reiki sentí una paz que hacía mucho no encontraba.
+              Dormí profundamente y me desperté liviana, en calma.”
+            </p>
+            <div class="mt-4">
+              <h6 class="fw-bold mb-0" style="color: rgb(54, 110, 74);">Lucía Fernández</h6>
+              <small class="text-muted">Sesión de Reiki</small>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Tarjetas --->
-     <h2>¿Cual es nuestro enfoque holistico?</h2>
-    <section class="cards">
-      <article class="card">
-        <img  src="../img/reiki.png" alt="Reiki" />
-        <h3>REIKI</h3>
-        <a href="./productos.html">para mayor información</a>
-      </article>
+      <!-- Testimonio 2 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-lg p-4 h-100" style="border-radius: 20px;">
+          <div class="card-body">
+            <p class="card-text fst-italic">
+              “Las meditaciones guiadas me ayudaron a conectar conmigo misma y a soltar mucha ansiedad.
+              Es un espacio donde uno realmente se siente acompañada.”
+            </p>
+            <div class="mt-4">
+              <h6 class="fw-bold mb-0" style="color: rgb(54, 110, 74);">Marina López</h6>
+              <small class="text-muted">Meditación Guiada</small>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <article class="card">
-        <img src="../img/tarot.png" alt="Tarot" />
-        <h4>TAROT</h4>
-        <a href="./productos.html">para mayor información</a>
-      </article>
+      <!-- Testimonio 3 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-lg p-4 h-100" style="border-radius: 20px;">
+          <div class="card-body">
+            <p class="card-text fst-italic">
+              “El tarot me dio claridad en un momento de mucha confusión. 
+              Sentí que cada carta tenía un mensaje que necesitaba escuchar.”
+            </p>
+            <div class="mt-4">
+              <h6 class="fw-bold mb-0" style="color: rgb(54, 110, 74);">Ana Gómez</h6>
+              <small class="text-muted">Lectura de Tarot</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <article class="card">
-        <img src="../img/meditacion.png" alt="Meditación" />
-        <h5>MEDITACION</h5>
-        <a href="./productos.html">para mayor información</a>
-      </article>
-    </section>
-
-    <section>
-      <h2>Nuestras certificaciones</h2>
-      <p>Contamos con certificaciones y formacion en reiki, tecnicas de meditacion y tarot terapeutico. Esto nos permite ofrecerte un acompañamiento profesional, confiable y respetuoso de tu proceso personal.</p>
-    </section>
-  </main>
-
- <footer>
-
-<p>&copy; 2025 mi sitio web </p>
-
-<section class="footer1">
-<div class="footer2">
-<img src="../img/facebooklogo.png" alt="">
-<a href="#"title="Facebook">
-
-</div>
-
-<div class="footer2">
-<img src="../img/instagramlogo.png" alt="">
-<a href="#"title="Instagram">
-
-</div>
-
-<div class="footer2">
-<img src="../img/whatsapplogo.png" alt="">
-<a href="#"title="WhatsApp">
-
-</div>
+    <!-- Botón al final -->
+    <div class="mt-5">
+      <a href="contacto.html" class="btn btn-success px-4 py-2" style="background-color: rgb(120, 180, 120); border: none; border-radius: 30px;">
+        🌸 Quiero vivir mi experiencia 🌸
+      </a>
+    </div>
+  </div>
 </section>
 
-</section>
+      </main>
 
-</footer>
+  <!-- Footer beige -->
+  <footer class="footer-beige text-center text-dark py-4 mt-5">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 Centro de Terapias Alternativas</p>
+      <div class="d-flex justify-content-center gap-4">
+        <a href="#" class="text-dark fs-4"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-dark fs-4"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-dark fs-4"><i class="bi bi-whatsapp"></i></a>
+      </div>
+      <p class="mt-3 small">✨ Conectá con tu bienestar interior ✨</p>
+    </div>
+  </footer>
 
-
-</body>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </html>
 

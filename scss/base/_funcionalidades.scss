@@ -1,0 +1,72 @@
+
+
+/*Variables*/
+
+$color-principal: #4f735a;
+$color-secundario: #89c19a;
+$color-texto: #222;
+$fuente-principal: 'Poppins', sans-serif;
+
+/*Extends*/
+
+%boton-base {
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.boton-verde {
+  @extend %boton-base;
+  background-color: $color-principal;
+}
+
+.boton-gris {
+  @extend %boton-base;
+  background-color: gray;
+}
+
+/*Transformaciones*/
+
+.botonanimado{
+transition: transform 0.3 ease;
+}
+
+.botonanimado:hover{
+    transform: scale(1.1);
+}
+
+.imagenanimada{
+    transition: transform 0.3 ease;
+}
+
+.imagenanimada:hover{
+    transform: rotate(10deg)
+}
+
+/*Animaciones*/
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/*Clases utilitarias*/
+
+.texto-centrado {
+  text-align: center;
+}
+
+.margen-auto {
+  margin: 0 auto;
+}
+
+.sombra-suave {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+

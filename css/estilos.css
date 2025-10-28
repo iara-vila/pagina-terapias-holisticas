@@ -1,0 +1,394 @@
+@charset "UTF-8";
+body {
+  background-image: url("../img/fondos.jpg");
+  background-size: cover;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/*Variables*/
+/*Extends*/
+.boton-gris, .boton-verde {
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.boton-verde {
+  background-color: #4f735a;
+}
+
+.boton-gris {
+  background-color: gray;
+}
+
+/*Transformaciones*/
+.botonanimado {
+  transition: transform 0.3 ease;
+}
+
+.botonanimado:hover {
+  transform: scale(1.1);
+}
+
+.imagenanimada {
+  transition: transform 0.3 ease;
+}
+
+.imagenanimada:hover {
+  transform: rotate(10deg);
+}
+
+/*Animaciones*/
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/*Clases utilitarias*/
+.texto-centrado {
+  text-align: center;
+}
+
+.margen-auto {
+  margin: 0 auto;
+}
+
+.sombra-suave {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 650px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px auto;
+  }
+}
+.interrogatorio {
+  border: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 560px) {
+  .header {
+    justify-content: start;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 517px) {
+  .header {
+    flex-direction: column;
+  }
+}
+.btn-accion {
+  display: inline-block;
+  float: right;
+  background-color: #7cda7f;
+  color: #000000;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #f8f8f8;
+  justify-content: center;
+}
+
+/* Texto del logo marca */
+.navbar-brand {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Enlaces del menú */
+.nav-link {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  padding: 10px 20px;
+}
+
+/* Hover simple */
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Navbar-nav*/
+.navbar-nav {
+  width: 100%;
+  justify-content: space-around;
+}
+
+/* PAGINA INDEX */
+.HeroSection {
+  text-align: center;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+.HeroSection h1, .HeroSection .titulo {
+  color: rgb(54, 110, 74);
+  font-size: clamp(36px, 4vw, 48px);
+  font-style: oblique;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.HeroSection p {
+  color: rgb(20, 20, 20);
+  font-size: clamp(18px, 2.2vw, 22px);
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto 20px;
+}
+.HeroSection .botonanimado {
+  background-color: rgb(167, 224, 167);
+}
+.HeroSection .botonanimado:hover {
+  background-color: rgb(56, 92, 56);
+}
+.HeroSection .Bienvenidos {
+  margin-top: 40px;
+}
+.HeroSection .Bienvenidos .imagenanimada {
+  display: block;
+  max-width: 820px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+/* PAGINA CONTACTO */
+.contact-page {
+  padding: 40px 0;
+}
+.contact-page .form-box,
+.contact-page .contact-box {
+  background: #fff;
+  border: 2px solid rgb(12, 12, 12);
+  border-radius: 12px;
+  padding: 20px;
+}
+.contact-page label {
+  font-weight: 700;
+  color: rgb(20, 20, 20);
+}
+.contact-page input {
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 6px;
+  padding: 10px;
+  color: rgb(20, 20, 20);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.contact-page input:focus {
+  border-color: rgb(100, 155, 115);
+  box-shadow: 0 0 0 3px rgba(100, 155, 115, 0.2);
+  outline: none;
+}
+.contact-page button {
+  background-color: rgb(167, 224, 167);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-weight: 600;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.contact-page button:hover {
+  transform: scale(1.03);
+  background: rgb(56, 92, 56);
+}
+.contact-page .contact-box h4 {
+  color: rgb(54, 110, 74);
+  margin-bottom: 12px;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.contact-page .contact-box p {
+  color: rgb(30, 30, 30);
+  margin-bottom: 8px;
+}
+.contact-page .contact-box p strong {
+  color: rgb(60, 100, 70);
+}
+.contact-page .contact-box .contact-actions a {
+  font-weight: 600;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+.contact-page .contact-box .contact-actions a:hover {
+  transform: scale(1.05);
+}
+
+/* PAGINA SOBRE NOSOTROS */
+.NuestrosServicios {
+  background: linear-gradient(180deg, #f9fcfa, #eef7f1);
+  padding: 60px 0;
+}
+.NuestrosServicios .titulo {
+  color: rgb(54, 110, 74);
+  font-size: 2.2rem;
+  text-decoration: underline;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.NuestrosServicios .servicio-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.NuestrosServicios .servicio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.NuestrosServicios .servicio-card .servicio-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid rgb(164, 211, 176);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.NuestrosServicios .servicio-card .servicio-img:hover {
+  transform: scale(1.05);
+}
+.NuestrosServicios .servicio-card h3 {
+  color: rgb(54, 110, 74);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.sobrenosotrostítulos {
+  text-align: center;
+  padding: 40px 20px;
+}
+.sobrenosotrostítulos h3 {
+  color: rgb(54, 110, 74);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+.sobrenosotrostítulos p {
+  color: rgb(20, 20, 20);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+.sobrenosotrostítulos .card {
+  border: none;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sobrenosotrostítulos .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.sobrenosotrostítulos .card .staff-name {
+  color: rgb(54, 110, 74);
+  font-weight: 600;
+}
+.sobrenosotrostítulos .card img {
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+.sobrenosotrostítulos .card img:hover {
+  transform: scale(1.05);
+}
+
+/* PAGINA PRODUCTOS*/
+.Servicios {
+  background: linear-gradient(180deg, #f9fcfa, #eef7f1);
+  padding: 60px 0;
+}
+.Servicios .card {
+  border: 2px solid rgb(164, 211, 176);
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Servicios .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+.Servicios .card .card-body h5 {
+  color: rgb(54, 110, 74);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.Servicios .card .card-body p {
+  color: rgb(30, 30, 30);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* PAGINA PREGUNTAS FRECUENTES */
+.PreguntasFrecuentes {
+  background: linear-gradient(180deg, #f9fcfa, #eef7f1);
+  padding: 60px 20px;
+}
+.PreguntasFrecuentes h2 {
+  color: rgb(54, 110, 74);
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+.PreguntasFrecuentes .accordion-item {
+  border: 2px solid rgb(167, 224, 167);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+.PreguntasFrecuentes .accordion-item .accordion-button {
+  background-color: rgb(230, 245, 235);
+  color: rgb(30, 70, 50);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.PreguntasFrecuentes .accordion-item .accordion-button:hover {
+  background-color: rgb(206, 238, 212);
+}
+.PreguntasFrecuentes .accordion-item .accordion-body {
+  background: white;
+  color: black;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.PreguntasFrecuentes .ConsejosPracticos {
+  margin-top: 60px;
+  text-align: center;
+}
+.PreguntasFrecuentes .ConsejosPracticos h2 {
+  color: rgb(54, 110, 74);
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+.PreguntasFrecuentes .ConsejosPracticos .card {
+  border: 2px solid rgb(167, 224, 167);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+.PreguntasFrecuentes .ConsejosPracticos .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: #efeeee;
+}
+.footer-beige {
+  background-color: #efeeee;
+}
+
+/*# sourceMappingURL=estilos.css.map */

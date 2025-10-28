@@ -1,0 +1,303 @@
+/* PAGINA INDEX */
+.HeroSection {
+  text-align: center;
+  padding: 40px 20px;
+  margin: 0 auto;
+
+  h1, .titulo {
+    color: rgb(54, 110, 74);
+    font-size: clamp(36px, 4vw, 48px);
+    font-style: oblique;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+  }
+
+  p {
+    color: rgb(20, 20, 20);
+    font-size: clamp(18px, 2.2vw, 22px);
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto 20px;
+  }
+
+  .botonanimado {
+    background-color: rgb(167, 224, 167);
+
+    &:hover {
+      background-color: rgb(56, 92, 56);
+    }
+  }
+
+  .Bienvenidos {
+    margin-top: 40px;
+
+    .imagenanimada {
+      display: block;
+      max-width: 820px;
+      margin: 0 auto;
+      border-radius: 12px;
+    }
+  }
+}
+
+/* PAGINA CONTACTO */
+.contact-page {
+  padding: 40px 0;
+
+  .form-box,
+  .contact-box {
+    background: #fff;
+    border: 2px solid rgb(12, 12, 12);
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  label {
+    font-weight: 700;
+    color: rgb(20, 20, 20);
+  }
+
+  input {
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 6px;
+    padding: 10px;
+    color: rgb(20, 20, 20);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &:focus {
+      border-color: rgb(100, 155, 115);
+      box-shadow: 0 0 0 3px rgba(100, 155, 115, 0.2);
+      outline: none;
+    }
+  }
+
+  button {
+    background-color: rgb(167, 224, 167);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+
+    &:hover {
+      transform: scale(1.03);
+      background: rgb(56, 92, 56);
+    }
+  }
+
+  .contact-box {
+    h4 {
+      color: rgb(54, 110, 74);
+      margin-bottom: 12px;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
+
+    p {
+      color: rgb(30, 30, 30);
+      margin-bottom: 8px;
+
+      strong {
+        color: rgb(60, 100, 70);
+      }
+    }
+
+    .contact-actions a {
+      font-weight: 600;
+      border-radius: 6px;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+/* PAGINA SOBRE NOSOTROS */
+.NuestrosServicios {
+  background: linear-gradient(180deg, #f9fcfa, #eef7f1);
+  padding: 60px 0;
+
+  .titulo {
+    color: rgb(54, 110, 74);
+    font-size: 2.2rem;
+    text-decoration: underline;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .servicio-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .servicio-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid rgb(164, 211, 176);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    h3 {
+      color: rgb(54, 110, 74);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.sobrenosotrostítulos {
+  text-align: center;
+  padding: 40px 20px;
+
+  h3 {
+    color: rgb(54, 110, 74);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+
+  p {
+    color: rgb(20, 20, 20);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+
+  .card {
+    border: none;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .staff-name {
+      color: rgb(54, 110, 74);
+      font-weight: 600;
+    }
+
+    img {
+      border-radius: 12px;
+      transition: transform 0.4s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+/* PAGINA PRODUCTOS*/
+.Servicios {
+  background: linear-gradient(180deg, #f9fcfa, #eef7f1);
+  padding: 60px 0;
+
+  .card {
+    border: 2px solid rgb(164, 211, 176);
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+      h5 {
+        color: rgb(54, 110, 74);
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      p {
+        color: rgb(30, 30, 30);
+        font-size: 17px;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+/* PAGINA PREGUNTAS FRECUENTES */
+.PreguntasFrecuentes {
+  background: linear-gradient(180deg, #f9fcfa, #eef7f1);
+  padding: 60px 20px;
+
+  h2 {
+    color: rgb(54, 110, 74);
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration: underline;
+  }
+
+  .accordion-item {
+    border: 2px solid rgb(167, 224, 167);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+    .accordion-button {
+      background-color: rgb(230, 245, 235);
+      color: rgb(30, 70, 50);
+      font-weight: 600;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: rgb(206, 238, 212);
+      }
+    }
+
+    .accordion-body {
+      background: white;
+      color: black;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+  }
+
+  .ConsejosPracticos {
+    margin-top: 60px;
+    text-align: center;
+
+    h2 {
+      color: rgb(54, 110, 74);
+      margin-bottom: 40px;
+      text-decoration: underline;
+    }
+
+    .card {
+      border: 2px solid rgb(167, 224, 167);
+      border-radius: 15px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}

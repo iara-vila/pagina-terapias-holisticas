@@ -1,0 +1,369 @@
+
+p {
+    color:black;
+    font-size: 20px;
+    margin: 20px;
+}
+
+h1 {
+    color:rgb(79, 115, 90);
+    font-size: 45px;
+    margin: 18;
+    text-align: center;
+    font-style: oblique;
+}
+
+h2 {
+    color:rgb(137, 193, 154);
+    font-size: 20;
+    text-align:center;
+    font-style: inherit;
+}
+
+h3{
+    color:rgb(79, 115, 90);
+}
+
+.titulo{
+    text-decoration-line: underline;
+
+}
+
+img {
+    align-content: center;
+    max-width: 150px;
+}
+
+
+.lista{
+    text-align: justify;
+    font-style: inherit;
+}
+
+
+
+/* Estilos del header */
+
+
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+
+.logoslogan{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.slogan-unico{
+    margin:0;
+    font-size:1.25rem;
+    font-weight:700;
+    color:#1f1e1e;
+    font-style: unset;
+}
+
+
+/* Estilos del navegador */ LISTOOO
+
+
+.navegador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+   
+}
+
+
+.navegador a{
+    display: block;
+    padding: 15px 25px;
+    border: 5px solid #0000;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+/* Tarjetas */
+
+
+.cards{
+    display:flex;
+    justify-content: center;
+    gap:24px;
+    flex-wrap:wrap;
+}
+
+
+.card
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    width:200px;
+    border: 1px solid;
+    border-top-width: 5px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.cardimg{
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    float: right;
+    margin-left: 15px;
+    max-width: 150px;
+}
+
+
+
+/* Estilo de Grid de pantalla productos */
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px auto;
+    grid-template-areas:
+    "meditacion meditacion"
+    "reiki reiki"
+    "tarot tarot"
+    ;
+    column-gap: 20px;
+    row-gap: 15px;
+
+
+}
+
+
+
+.grid-item {
+  padding: 15px;
+  background: #fdfaf7;
+  border: 2px solid #413e43;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #2c2c2c;
+  text-align: center;
+}
+
+
+
+/* Estilo de los footer y Gradiente animada  */ LISTOOO
+.footer-beige {
+  background-color: #efeeee;
+  }
+
+
+/* Responsive Design*/ LISTOOOO
+
+
+@media screen and (max-width:650px){
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px auto;
+
+
+    }
+}
+
+
+ .interrogatorio{
+    border: 2px;
+    background-color: rgb(255, 255, 255);
+
+
+    }
+
+
+@media screen and (max-width:560px) {
+   
+.header{
+  justify-content:start;
+  gap:10px;
+}
+}
+
+
+
+
+@media screen and (max-width:517px) {
+.header{
+  flex-direction: column;
+}
+}
+
+
+/* CARRUSEL*/    LISTOO
+
+
+/* Centrar el carrusel en la página */
+#carouselExample{
+  width: min(100%, 200px);
+  margin: 16px auto;            
+}
+
+
+/* Centrar cada foto y darle bordes */
+#carouselExample .carousel-item{
+  text-align: center;            
+}
+
+
+#carouselExample .carousel-item img{
+  display: inline-block;          
+  max-width: 100%;
+  height: auto;                  
+  margin: 0 auto;                
+  border: 3px solid color(79, 115, 90);      
+  border-radius: 14px;            
+  box-shadow: 0 2px 12px rgba(0,0,0,.08);
+}
+
+
+/* Hablemos + destello*/
+
+
+.hablemosdestello{
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  gap: 12px;            
+}
+.destello{
+  width: 54px;          
+  height: auto;
+}
+
+
+/* Formulario*/   LISTOO
+
+
+.formulariobox{
+  padding:16px;
+  border:2px solid #030304;
+  border-radius:12px;
+  background:#fff;
+}
+
+
+/* Boton del header*/   LISTOOOOO
+.btn-accion{
+    display:inline-block;
+    float: right;
+    background-color: #7cda7f;
+    color:#000000;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+/* Navegador Bootstrap*/    LISTOOO
+
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #f8f8f8;
+  justify-content: center;
+}
+
+
+/* Texto del logo marca */
+.navbar-brand {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+/* Enlaces del menú */
+.nav-link {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  padding: 10px 20px;
+}
+
+
+/* Hover simple */
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Navbar-nav*/
+.navbar-nav {
+  width: 100%;
+  justify-content: space-around;
+}
+
+
+/*Transformaciones*/
+.botonanimado{
+transition: transform 0.3 ease;
+}
+
+
+.botonanimado:hover{
+    transform: scale(1.1);
+}
+
+
+.imagenanimada{
+    transition: transform 0.3 ease;
+}
+
+
+.imagenanimada:hover{
+    transform: rotate(10deg)
+}
+
+
+/*Gradientes*/
+.botongradient{
+background:radial-gradient(circle, rgb(98, 231, 98), rgb(169, 237, 169));
+font-weight: bold;
+background-size: 200% 200%;
+  animation: gradientAnimation 5s infinite alternate;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+.botongradient:hover {
+  transform: scale(1.1);
+}
+
+
+/* Animación del gradiente */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
